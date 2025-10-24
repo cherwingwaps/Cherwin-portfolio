@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherwin Lumagbas | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a1b4f, #4a148c);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background: linear-gradient(135deg, #1a237e, #4a148c);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #b49bff;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(180, 155, 255, 0.3);
+    }
+
+    header h2 {
+      color: #b49bff;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      color: #e0e0e0;
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-info {
+      margin-top: 15px;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #90caf9;
+      text-shadow: 0 0 8px #90caf9;
+    }
+
+    /* Main Sections */
+    main {
+      padding: 40px 10%;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      margin-bottom: 30px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(142, 112, 255, 0.15);
+      transition: 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(142, 112, 255, 0.25);
+    }
+
+    .section h2 {
+      color: #90caf9;
+      border-bottom: 2px solid #64b5f6;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    .section ul li {
+      padding: 8px 0;
+      color: #dcdcdc;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      border: 3px solid #64b5f6;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: #b5b5b5;
+      margin: 40px 0 20px;
+      font-size: 0.9rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ✅ Fix: Prevent navbar from covering section titles */
+    section, .section {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="cherwin.png" alt="Profile Photo">
+    <h2>Cherwin Lumagbas</h2>
+    <p>Student | Aspiring Web Developer</p>
+    <div class="contact-info" id="contact">
+      <p><strong>📍 Address:</strong> Upper Laguerta Lahug, Cebu City</p>
+      <p><strong>📧 Email:</strong> Cherwingwaps@gmail.com</p>
+      <p><strong>📱 Contact:</strong> 09203827513</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar placed below profile -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p>“Don’t wait for opportunity. Create it.”<br>
+      I am a motivated and creative student passionate about web development. I enjoy designing simple yet functional websites and constantly learning new technologies to improve my skills.</p>
+    </div>
+
+    <div class="section" id="education">
+      <h2>Educational Background</h2>
+      <ul>
+        <li><strong>Elementary:</strong> Lahug Elementary School — 2016</li>
+        <li><strong>Junior High School:</strong> Lahug National High School — 2022</li>
+        <li><strong>Senior High School:</strong> Lahug National High School — GAS</li>
+      </ul>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills & Abilities</h2>
+      <ul>
+        <li>Computer troubleshooting</li>
+        <li>Good communication and teamwork</li>
+        <li>Creative and detail-oriented</li>
+        <li>Efficient task and time management</li>
+      </ul>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>My Project</h2>
+      <div class="project">
+        <img src="project 1.png" alt="Project Screenshot">
+        <p><strong>Campus Quest</strong> — An entertaining and educational game designed for children to learn while having fun.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Career Goals</h2>
+      <p>My dream is to grow into a professional web developer who builds modern, accessible, and impactful websites that inspire creativity and make a difference in people’s lives.</p>
+    </div>
+
+    <footer>
+      © 2025 Cherwin Lumagbas. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
